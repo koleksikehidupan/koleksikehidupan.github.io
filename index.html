@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Short Drama Terpopuler Hari Ini</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #080b11;
+            color: #ffffff;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btn-meta-drama {
+            background: linear-gradient(135deg, #1877f2 0%, #0056cb 100%);
+            box-shadow: 0 4px 25px rgba(24, 119, 242, 0.45);
+        }
+        .btn-meta-drama:active {
+            transform: scale(0.97);
+        }
+        .pulse-play {
+            animation: pulse-ring 2s infinite ease-in-out;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(24, 119, 242, 0.7); }
+            50% { transform: scale(1.08); box-shadow: 0 0 0 14px rgba(24, 119, 242, 0); }
+        }
+        .glass-pill {
+            background: rgba(22, 27, 34, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-0 sm:p-4 bg-slate-950">
+
+    <!-- Container Utama: Vertikal Phone Frame -->
+    <div class="w-full max-w-[425px] h-[100dvh] sm:h-[92vh] sm:rounded-[2.5rem] bg-black overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] relative border border-slate-800 flex flex-col justify-between">
+
+        <!-- Top Floating Header -->
+        <div class="absolute top-0 left-0 right-0 z-30 p-4 pt-5 bg-gradient-to-b from-black/95 via-black/50 to-transparent flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-[#1877f2] flex items-center justify-center text-white text-xs shadow-md">
+                    <i class="fas fa-play ml-0.5"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-xs font-bold text-white tracking-wide">REEL DRAMA</span>
+                        <i class="fas fa-check-circle text-[#1877f2] text-[11px]"></i>
+                    </div>
+                    <span class="text-[10px] text-slate-400">Mini Series Viral</span>
+                </div>
+            </div>
+
+            <!-- Badge Live Viewers -->
+            <div class="glass-pill px-3 py-1 rounded-full flex items-center gap-1.5 text-xs font-semibold text-slate-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span class="text-[11px] font-bold text-white">48.2K Menonton</span>
+            </div>
+        </div>
+
+        <!-- Video Player Body (Format Vertikal) -->
+        <div id="playerArea" class="relative w-full flex-grow flex items-center justify-center cursor-pointer group select-none overflow-hidden">
+            
+            <!-- Poster Drama Sinematik -->
+            <img src="https://images.unsplash.com/photo-1518173946687-a4c8a383392e?w=800&auto=format&fit=crop&q=80" 
+                 alt="Drama Thumbnail" 
+                 class="absolute inset-0 w-full h-full object-cover filter brightness-[0.62] group-hover:scale-105 transition-transform duration-700 ease-out">
+            
+            <!-- Vignette Gelap Realistis Khas Reels -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/95"></div>
+
+            <!-- Tombol Play Tengah Berpendar -->
+            <div class="relative z-20 flex flex-col items-center gap-3">
+                <div class="pulse-play w-20 h-20 rounded-full bg-[#1877f2] text-white flex items-center justify-center border-4 border-white/30 backdrop-blur-sm group-hover:scale-110 active:scale-95 transition-all">
+                    <i class="fas fa-play text-2xl ml-1 text-white"></i>
+                </div>
+                <div class="glass-pill px-4 py-1.5 rounded-full text-xs font-bold text-white tracking-wide shadow-lg">
+                    KETUK UNTUK MEMUTAR
+                </div>
+            </div>
+
+            <!-- Bilah Aksi Samping (Khas Short Drama) -->
+            <div class="absolute right-3.5 bottom-36 z-20 flex flex-col items-center gap-4 text-white">
+                <div class="flex flex-col items-center gap-1">
+                    <div class="w-11 h-11 rounded-full glass-pill flex items-center justify-center active:scale-90 transition-transform">
+                        <i class="fas fa-heart text-red-500 text-lg"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-300">182.4K</span>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <div class="w-11 h-11 rounded-full glass-pill flex items-center justify-center active:scale-90 transition-transform">
+                        <i class="fas fa-comment-dots text-white text-base"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-300">6.9K</span>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <div class="w-11 h-11 rounded-full glass-pill flex items-center justify-center active:scale-90 transition-transform">
+                        <i class="fas fa-bookmark text-amber-400 text-base"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-300">24K</span>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <div class="w-11 h-11 rounded-full glass-pill flex items-center justify-center active:scale-90 transition-transform">
+                        <i class="fas fa-share text-white text-base"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-300">Bagi</span>
+                </div>
+            </div>
+
+            <!-- Seleksi Episode Mini Drama (Memicu Klik Alami) -->
+            <div class="absolute left-4 bottom-24 z-20 flex items-center gap-2">
+                <span class="px-3 py-1 rounded-lg bg-[#1877f2] text-white text-[11px] font-extrabold shadow">
+                    Eps. 01 (Selesai)
+                </span>
+                <span class="px-3 py-1 rounded-lg glass-pill text-slate-300 text-[11px] font-bold border border-white/20 flex items-center gap-1">
+                    <i class="fas fa-lock-open text-[10px] text-amber-400"></i> Eps. 02 Lanjutan
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Bagian Bawah: Info & Tombol Aksi Paling Ergonomis -->
+        <div class="relative z-30 p-4 pt-2 bg-gradient-to-t from-black via-black/95 to-transparent flex flex-col gap-3">
+            
+            <!-- Judul & Keterangan Post -->
+            <div class="text-left pr-6">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="bg-red-600 text-white text-[10px] font-black px-2 py-0.5 rounded tracking-wider">
+                        FULL EPISODE
+                    </span>
+                    <span class="text-xs text-slate-400 font-medium">Kualitas HD 1080p</span>
+                </div>
+                <h1 class="text-base sm:text-lg font-bold text-white leading-snug line-clamp-2">
+                    Episode Lanjutan Penuh: Kebenaran yang Terungkap Bikin Semua Terdiam
+                </h1>
+                <p class="text-xs text-slate-400 line-clamp-1 mt-0.5">
+                    Tonton sekarang sebelum siaran episode diarsipkan...
+                </p>
+            </div>
+
+            <!-- Progress Bar Video -->
+            <div class="w-full bg-white/20 h-1 rounded-full overflow-hidden">
+                <div class="bg-[#1877f2] h-full w-[65%]"></div>
+            </div>
+
+            <!-- Tombol Aksi Utama (Zona Jempol Mobile Terbawah) -->
+            <button id="startBtn" class="btn-meta-drama w-full py-4 px-6 rounded-2xl text-white font-extrabold text-base flex items-center justify-center gap-2.5 active:scale-98 transition-transform cursor-pointer">
+                <i class="fas fa-play-circle text-xl"></i>
+                <span>Tonton Lanjutan Episode Sekarang</span>
+                <i class="fas fa-chevron-right text-xs ml-1"></i>
+            </button>
+
+            <!-- Footer Meta Friendly -->
+            <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/10">
+                <span>Dukungan Semua Peramban</span>
+                <span>Resolusi Adaptif Otomatis</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script Redirect Terintegrasi -->
+    <script>
+        function handleAction() {
+            setTimeout(function() {
+                window.open('watch.html', '_blank');
+                window.location.href = 'https://loadads1.blogspot.com/';
+            }, 80);
+        }
+
+        document.getElementById('playerArea').addEventListener('click', handleAction);
+        document.getElementById('startBtn').addEventListener('click', handleAction);
+    </script>
+
+    <!-- Tracker Histats -->
+    <script type='text/javascript'>
+        var _Hasync=_Hasync||[];
+        _Hasync.push(['Histats.start', '1,5009418,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function(){
+            var hs = document.createElement('script'); hs.async = true;
+            hs.src = '//s10.histats.com/js15_as.js';
+            (document.head||document.body).appendChild(hs);
+        })();
+    </script>
+</body>
+</html>
